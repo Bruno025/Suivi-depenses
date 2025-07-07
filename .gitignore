@@ -1,3 +1,23 @@
+# ✅ 1. Le fichier contenant des secrets (jamais à versionner)
 .env
+
+# ✅ 2. Les dépendances Node.js (générées par npm)
 node_modules/
+
+# ✅ 3. Les fichiers de log éventuels
 *.log
+
+# ✅ 4. Les fichiers système (Windows, macOS, Linux)
+.DS_Store
+Thumbs.db
+
+# ✅ 5. Dossiers temporaires (ex : VS Code ou autres IDE)
+.vscode/
+.idea/
+
+# ✅ 6. Archives ou exports manuels
+*.zip
+
+# ✅ 7. Dossiers de build éventuels
+dist/
+build/
