@@ -1,4 +1,4 @@
-# ✅ 1. Le fichier contenant des secrets (jamais à versionner)
+# ✅ 1. Le fichier
 .env
 
 # ✅ 2. Les dépendances Node.js (générées par npm)
