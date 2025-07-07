@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suivi de Dépenses</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: Cambria, serif;
+  }
+
+  input, button {
+    font-family: Cambria, serif;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Suivi de Dépenses Personnelles</h1>
+
+    <form id="expense-form">
+      <input type="text" id="description" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Montant ($)" step="0.01" required />
+      <input type="text" id="category" placeholder="Catégorie (ex: Transport)" required />
+      <input type="month" id="month" required />
+      <button type="submit">Ajouter la dépense</button>
+    </form>
+
+    <div class="buttons">
+      <button id="view-by-category">Voir par catégorie</button>
+      <button id="view-all-expenses">Toutes les dépenses</button>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="summary-chart"></canvas>
+    </div>
+
+    <div id="expenses-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
